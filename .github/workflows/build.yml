@@ -24,4 +24,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/jax4090-cuda122:latest
-
