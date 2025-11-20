@@ -16,4 +16,6 @@ RUN pip install \
     -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 WORKDIR /workspace
-CMD ["/bin/bash"]
+
+# IMPORTANT: Keep container alive so RunPod SSH works
+CMD ["sleep", "infinity"]
